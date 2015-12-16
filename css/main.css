@@ -1,0 +1,32 @@
+body {
+  padding-top: 50px;
+  color: white;
+  background-color: black;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
+
+.game_square {
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.x_square {
+  border: 5px solid yellow;
+  padding: 50px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+.black {
+
+}
+
+#play_first {
+  background-color: black;
+}
+
