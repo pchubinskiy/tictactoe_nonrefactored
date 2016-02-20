@@ -27,13 +27,21 @@ function updateScore(winner) {
     x_score = parseInt(x_score);
     var new_score = x_score + 1;
     $('#x_score').text(new_score);
-    //$("#show_winner").text("X Won").fadeOut('slow/1000', function() {});
+
+    var x_score_mob = $('#x_score_mobile').text();
+    x_score_mob = parseInt(x_score_mob);
+    var new_score_mob = x_score_mob + 1;
+    $('#x_score_mobile').text(new_score_mob);
   } else {
     var o_score = $('#o_score').text();
     o_score = parseInt(o_score);
     var new_score = o_score + 1;
     $('#o_score').text(new_score);
-    //$("#show_winner").text("O Won").fadeOut('slow/1000', function() {});
+
+    var o_score_mob = $('#o_score_mobile').text();
+    o_score_mob = parseInt(o_score_mob);
+    var new_score_mob = o_score_mob + 1;
+    $('#o_score_mobile').text(new_score_mob);
   }
 }
 
@@ -295,6 +303,9 @@ if (turn >= 5) {
 }
 
 $('#x_first').click(function() {
+  xFirst();
+});
+$('#x_first_mobile').click(function() {
   xFirst();
 });
 $('#x_score').change(function() {

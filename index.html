@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Tic Tac Toe: WDI Week 3</title>
+    <title>Tic Tac Toe: Week 3</title>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
@@ -44,7 +44,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Tictax</a>
+          <a class="navbar-brand" href="#">Tic Tac Toe</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -63,7 +63,7 @@
         <p class="lead"><br></p>
       </div>
 
-      <div class="row">
+      <div id="toprow" class="row">
         <div id="sq1" class="game_square col-lg-offset-4">
           <img id="char1" class="black" src="images/black.png" alt="">
         </div>
@@ -74,8 +74,8 @@
           <img id="char3" class="black" src="images/black.png" alt="">
         </div>
       </div>
-      <div class="row">
-        <button id="refresh" class="col-lg-offset-1">New game</button>
+      <div id="midrow" class="row">
+        <button id="newgame" class="col-lg-offset-1 hidden-xs hidden-sm hidden-md">New game</button>
 
         <div id="sq4" class="game_square col-lg-offset-2">
           <img id="char4" class="black" src="images/black.png" alt="">
@@ -87,13 +87,13 @@
           <img id="char6" class="black" src="images/black.png" alt="">
         </div>
 
-        <div id="scoreboard" class="hidden-xs">
+        <div id="scoreboard" class="hidden-xs hidden-sm hidden-md">
           <div>Score</div>
           <div>X: <span id="x_score">0</span></div>
           <div>O: <span id="o_score">0</span></div>
         </div>
       </div>
-      <div class="row" id="botrow">
+      <div id="botrow" class="row">
         <div id="sq7" class="game_square col-lg-offset-4">
           <img id="char7" class="black" src="images/black.png" alt="">
         </div>
@@ -105,7 +105,18 @@
         </div>
       </div>
 
-      <button id="x_first" class="no col-lg-offset-5">
+      <div id="controls" class="row">
+        <button id="newgame_mobile" class="hidden-lg">New game</button>
+        <div id="scoreboard_mobile" class="hidden-lg">
+          <div>X: <span id="x_score_mobile">0</span></div>
+          <div>O: <span id="o_score_mobile">0</span></div>
+        </div>
+        <button id="x_first_mobile" class="no hidden-lg">
+          X-First On
+        </button>
+      </div>
+
+      <button id="x_first" class="no col-lg-offset-5 hidden-xs hidden-sm hidden-md">
         Turn X-First On
       </button>
     </div><!-- /.container -->

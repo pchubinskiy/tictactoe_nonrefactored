@@ -48,10 +48,6 @@ h1 {
   display: inline-block;
 }
 
-#botrow {
-  margin-top: 4px;
-}
-
 #x_first {
   border: 3px solid white;
   padding: 10px;
@@ -60,25 +56,130 @@ h1 {
   background-color: black;
   margin-top: 3%;
   margin-bottom: 3%;
-  margin-left: 42.8%;
+  margin-left: 43%;
 }
 
 #scoreboard {
   border: 3px solid white;
-  padding: 5px 10px 5px 10px;
+  padding: 0px 10px 5px 10px;
   border-radius: 15px;
   display: inline-block;
   background-color: black;
   margin-left: 15.5%;
 }
 
-#refresh {
+#newgame {
   border: 3px solid white;
   padding: 10px;
   border-radius: 15px;
   display: inline-block;
   background-color: black;
-  margin-left: 12%;
-  margin-right: -3.5%;
+  margin-left: 11.6%;
+  margin-right: -3.2%;
+}
+
+#newgame_mobile {
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: black;
+  margin-top: 3%;
+  margin-left: 0%;
+}
+
+#scoreboard_mobile {
+  border: 3px solid white;
+  padding: 5px 10px 5px 10px;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: black;
+  margin-top: 3%;
+  margin-left: 13.5%;
+}
+
+#x_first_mobile {
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 15px;
+  display: inline-block;
+  background-color: black;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  margin-left: 13.5%;
+}
+
+#controls {
+  margin-left: 3.5%;
+}
+
+#toprow {
+}
+#midrow {
+  margin-top: 4px;
+}
+#botrow {
+  margin-top: 4px;
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+/* account for by below: small devices */
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (max-width: 767px) {
+  #x_first {
+    margin-left: 42.8%;
+  }
+
+  #toprow {
+    margin-left: 3%;
+  }
+  #midrow {
+    margin-left: 3%;
+  }
+  #botrow {
+    margin-left: 3%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 768px) and (max-width: 979px) {
+  #x_first {
+    margin-left: 42.8%;
+  }
+
+  #toprow {
+    margin-left: 26%;
+  }
+  #midrow {
+    margin-left: 26%;
+  }
+  #botrow {
+    margin-left: 26%;
+  }
+  #controls {
+    margin-left: 22.5%;
+  }
+}
+
+@media (min-width: 980px) and (max-width: 1200px) {
+  #x_first {
+    margin-left: 42.8%;
+  }
+
+  #toprow {
+    margin-left: 32%;
+  }
+  #midrow {
+    margin-left: 32%;
+  }
+  #botrow {
+    margin-left: 32%;
+  }
+  #controls {
+    margin-left: 28%;
+  }
 }
 
