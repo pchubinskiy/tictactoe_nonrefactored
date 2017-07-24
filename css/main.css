@@ -142,6 +142,10 @@ h1 {
   #botrow {
     margin-left: 3%;
   }
+
+  h1 {
+    font-size: 30px;
+  }
 }
 
 /* Medium devices (desktops, 992px and up) */
